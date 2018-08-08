@@ -17,7 +17,7 @@ options = {
     'format': 'bestaudio/audio'
 }
 dl = YoutubeDL(options)
-dl.download(['https://www.youtube.com/watch?v=cUmpJ2zwfVU']) #(Bài hát: Suýt Nữa Thì - Andez)
+dl.download(['https://www.youtube.com/watch?v=cUmpJ2zwfVU']) #(Bài hát: Suýt Nữa Thì - Andiez)
 
 
 
