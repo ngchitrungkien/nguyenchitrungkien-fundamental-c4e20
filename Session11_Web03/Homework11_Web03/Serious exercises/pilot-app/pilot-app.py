@@ -89,7 +89,7 @@ def update_service(service_id):
         service.name = name
         service.yob = yob
         service.phone = phone
-    
+
         service.save()
         
         return redirect(url_for('admin'))

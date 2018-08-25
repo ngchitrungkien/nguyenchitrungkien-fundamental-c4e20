@@ -24,6 +24,7 @@ for i in range(20):
             height = randint(165,190),
             phone = fake.phone_number(),
             address = fake.address(),
+            status = choice([True,False]),
             descriptions = sample(descriptions_male,3)
             
         )
@@ -36,6 +37,7 @@ for i in range(20):
             height = randint(150,175),
             phone = fake.phone_number(),
             address = fake.address(),
+            status = choice([True,False]),
             descriptions = sample(descriptions_female,3),
             measurements = [randint(70,90), randint(60,70), randint(70,90)]
         )
