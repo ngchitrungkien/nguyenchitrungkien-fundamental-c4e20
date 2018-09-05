@@ -19,7 +19,7 @@ def index():
 
 @app.route('/search/<g>')
 def search(g):
-    all_service = Service.objects(gender=g,yob__lte = 1998,height__gte=165,address__icontains="Hà Nội")
+    all_service = Service.objects(gender=g)
     return render_template('search.html',all_service=all_service)
 
 @app.route('/customer')
