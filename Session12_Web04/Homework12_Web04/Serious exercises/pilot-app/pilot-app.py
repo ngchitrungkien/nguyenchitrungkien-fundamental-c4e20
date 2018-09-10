@@ -50,7 +50,6 @@ def delete(service_id):
     else:
         return'Service not found'
 
-
 @app.route('/new-service', methods = ['GET', 'POST'])
 def create():
     if request.method == 'GET':
@@ -77,7 +76,7 @@ def create():
 @app.route("/detail/<service_id>")
 def detail(service_id):
     service = Service.objects.with_id(service_id)
-    session["service"]= str(service.id)
+    session["service"] = str(service.id)
     if "loggedin" in session:
         if session["loggedin"] == True:
             if service is not None:
@@ -145,8 +144,12 @@ def login():
             session["loggedin"] = True
             user = User.objects.get(username=username)
             session["user"] = str(user.id)
-            service_id = session["service"]
-            return redirect(url_for("detail", service_id=service_id))
+            if "service" in session:
+
+                service_id = session["service"]
+                return redirect(url_for("detail", service_id=service_id))
+            else:
+                return redirect(url_for("index"))
         else:
             return redirect(url_for("signin"))
 

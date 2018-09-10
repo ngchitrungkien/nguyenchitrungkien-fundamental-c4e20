@@ -1,0 +1,81 @@
+.flex{
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    flex-wrap: wrap;
+    background-image: url(https://qdesq.imagekit.io/img/tr:n-detail_image_hq/image/upload/v1473753926/gfnhfnjd47lbsaurfjzr.png);
+    background-size: cover;
+}
+
+.bg-red{
+    background-color: red;
+}
+
+.bg-blue{
+    background-color: blue;
+}
+
+.hcover{
+    height: 500px;
+    width: 100%;
+}
+
+.himage{
+    height: 200px;
+    width: 200px;
+}
+
+.circle{
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.avatar1{
+    background-image: url(https://techkids.vn/photos/doanhtu_1485066501589.jpg);
+}
+
+.avatar2{
+    background-image: url(https://techkids.vn/photos/12295455_505369616307097_1044571515723092257_n_1485066524353.jpg);
+}
+
+.avatar3{
+    background-image: url(https://techkids.vn/photos/MinhTaHoang_1485066540993.jpg);
+}
+
+.avatar4{
+    background-image: url(https://techkids.vn/photos/quanghuy_1485066555926.jpg);
+}
+
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+#name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+.font{
+    width: 100%;
+    height: 50px;
+}
+
+.title-fix{
+    align-items: flex-end;
+    font-size: 150%;
+}
+
+.line{
+    width: 200px;
+    height: 1px;
+    border-bottom: 1px solid white;
+    position: absolute;
+    }
